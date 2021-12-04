@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    text-align: start;
+    padding: .5rem 0.5rem;
+    color: #8bd8bd;
+}
+
+header {
+    padding: 5rem 2rem 20rem 2rem;
+}
+
+header a {
+    display: inline-block;
+    margin: 2rem;
+    text-decoration: none;
+    border: 3px #8bd8bd solid;
+    color: #8bd8bd;
+    font-size: 1.2rem;
+    padding: 1.1rem;
+}
+
+header a:hover {
+    background-color: whitesmoke;
+}
+
+footer p {
+    margin: 5px;
+    margin-left: 1rem;
+    font-size: .8rem;
+}
+
+h1 {
+    margin-top: 150px;
+}
+h2 {
+    text-align: center;
+}
+
+.green{
+    color: #8bd8bd;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} 
+
+#logo img {
+    margin-left: 2rem;
+    height: 60px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #8bd8bd;
+    padding: 1rem;
+    display: block;
+    font-size: 2rem;
+}
+
+.navbar li a:hover {
+    background-color: whitesmoke;
+}
+
+.menu {
+    position: absolute;
+    right: 2rem;
+    top: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 36px;
+    height: 26px;
+}
+
+.bar {
+    height: 6px;
+    width: 100%;
+    background-color: #8bd8bd;
+    border-radius: 10px;
+}
+
+/* palevelut */
+
+#palvelut {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0rem 20rem 0rem;
+}
+
+#palvelut p {
+    text-align: center;
+}
+
+.service {
+    max-width: 250px;
+    font-size: .8rem;
+}
+
+#palvelut img {
+    width: 10rem; 
+    height: auto;
+}
+
+/* yhteystiedot */
+#yhteystiedot {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20rem;
+    font-size: .8rem;
+}
+
+
+#yhteystiedot a img {
+ max-width: 175px;
+ max-height: 100%;
+}
+
+/*Media queries*/
+
+
+@media only screen and (max-width: 550px){
+    #palvelut img {
+        width: 75%; 
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: .8rem;
+    }
+
+    header a {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: .7rem;
+    }
+
+    .service{
+        font-size: .5rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #palvelut {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #yhteystiedot {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 175px) {
+    header a {
+        font-size: .4rem;
+    }
+}
+
+@media (max-width: 2000px) {
+    .menu {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar ul {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
