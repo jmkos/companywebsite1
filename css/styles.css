@@ -212,6 +212,11 @@ h2 {
         height: auto;
     }
 
+    #whatsappLogo a img {
+        width: 60%;
+        height: auto;
+    }
+
     h1 {
         font-size: 1.3rem;
     }
