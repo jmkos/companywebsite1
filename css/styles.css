@@ -62,6 +62,7 @@ header a:hover {
 .textContainer {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     align-content: center;
     justify-content: space-between;
@@ -80,7 +81,7 @@ header a:hover {
 }
 
 .textBox {
-    max-width: 700px;
+    max-width: 80%;
 }
 
 
@@ -259,6 +260,7 @@ h2 {
     footer {
         flex-direction: column;
     }
+    
 }
 
 
