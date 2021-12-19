@@ -73,10 +73,6 @@ header a:hover {
 }
  
 #bg1 {
-    background-image: url(../media/pictures/bg4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     color: black;
 }
 
